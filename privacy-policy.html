@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zásady ochrany osobních údajů</title>
+</head>
+<body>
+    <h1>Zásady ochrany osobních údajů</h1>
+    <p>Aplikace <strong>MES Alert</strong> byla vytvořena jako interní firemní aplikace. Tato SLUŽBA je poskytována společností <strong>Letoplast</strong> a je určena zaměstnancům k použití tak, jak je.</p>
+    <p>Tato stránka slouží k informování uživatelů o našich zásadách týkajících se shromažďování, používání a zveřejňování údajů, pokud se rozhodnou používat naši službu.</p>
+
+    <h2>Shromažďování a používání informací</h2>
+    <p>Aplikace při prvním spuštění vyžaduje zadání <strong>identifikátoru uživatele</strong>. Nejde nutně o jméno ani jiný osobní údaj — může jít o libovolný textový kód (např. "XXX"), který administrátorovi na straně serveru slouží pouze k přiřazení pracovní pozice a k určení, jaké typy zpráv má dané zařízení přijímat.</p>
+    <p>Aplikace dále při instalaci automaticky vygeneruje a lokálně uloží <strong>jedinečný identifikátor zařízení (UUID)</strong>.</p>
+    <p>Identifikátor uživatele, identifikátor zařízení a token pro doručování push notifikací (viz níže) jsou odeslány na náš interní firemní server, kde slouží výhradně k registraci zařízení pro příjem upozornění MES. Tato data neopouštějí infrastrukturu společnosti Letoplast a nejsou předávána žádné další třetí straně ani používána k jiným účelům.</p>
+    <p>Aplikace se dále v rámci firemní Wi-Fi sítě připojuje k internímu serveru přes WebSocket, odkud přijímá upozornění v reálném čase.</p>
+
+    <h2>Firebase Cloud Messaging (třetí strana)</h2>
+    <p>Pro doručování upozornění, když je zařízení mimo firemní Wi-Fi nebo aplikace není spuštěná, používáme službu <strong>Firebase Cloud Messaging</strong> poskytovanou společností Google. Za tímto účelem je Googlu předáván push token přiřazený k zařízení. Zpracování těchto dat se řídí zásadami ochrany osobních údajů Google.</p>
+
+    <h2>Protokolová data</h2>
+    <p>Naše servery mohou standardním způsobem uchovávat technické záznamy o síťové komunikaci (např. IP adresa, čas požadavku) nutné pro provoz a diagnostiku služby. Tyto záznamy nejsou předávány třetím stranám.</p>
+
+    <h2>Zabezpečení</h2>
+    <p>Komunikace mezi aplikací a naším serverem probíhá šifrovaně (HTTPS/WSS). Přístup k datům je omezen na infrastrukturu společnosti Letoplast.</p>
+
+    <h2>Změny těchto zásad ochrany osobních údajů</h2>
+    <p>Tyto zásady ochrany osobních údajů mohou být čas od času aktualizovány. Doporučujeme vám pravidelně kontrolovat tuto stránku pro případné změny. O všech změnách vás budeme informovat zveřejněním nových zásad ochrany osobních údajů na této stránce.</p>
+    <p>Tyto zásady jsou platné od 12.09.2026.</p>
+
+    <h2>Kontaktujte nás</h2>
+    <p>Pokud máte jakékoli dotazy nebo návrhy týkající se našich zásad ochrany osobních údajů, neváhejte nás kontaktovat na <a href="mailto:miroslav.snobel@gmail.com">kontaktní adrese</a>.</p>
+</body>
+</html>
